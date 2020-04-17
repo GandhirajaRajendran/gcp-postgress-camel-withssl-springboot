@@ -31,7 +31,7 @@ public class configBean {
 
 
 	@Bean(name = "datasource")
-	public DataSource setupIntegrationDataSource() throws ClassNotFoundException, IOException {
+	public DataSource setupDataSource() throws ClassNotFoundException, IOException {
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName(integrationDBDriverClass);
 		dataSource.setUsername(integrationDBUserName);
